@@ -17,7 +17,9 @@
 ### B) rd.break
 В окне выбора ядра при загрузке системы нажал "е", добавил rd.break, попал в emergency mode.
 Перемонтировал sysroot режим read-write командой "mount -o remount,rw /sysroot", заменил корневой каталог "chroot /sysroot", изменил пароль рута "passwd root", создал файл "touch /.autorelabel"
+
 ![image](https://user-images.githubusercontent.com/98832702/163769003-9d51fa92-8acd-4b5b-aeb2-c072cc665d2f.png)
+
 При следующей загрузке попал в систему с новым паролем rootа.
 
 ### C) rw init=/sysroot/bin/sh
